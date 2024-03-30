@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/RahmanBadru/jenkins-deployment.git'
+        git branch: 'main', url='https://github.com/RahmanBadru/jenkins-deployment.git'
       }
     }
     stage('Build image') {
