@@ -7,7 +7,6 @@ pipeline {
   agent any
   stages {
     stage('Checkout Source') {
-      env.BRANCH_NAME='main'
       steps {
         git 'https://github.com/RahmanBadru/jenkins-deployment.git'
       }
